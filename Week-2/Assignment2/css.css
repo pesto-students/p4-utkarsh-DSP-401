@@ -1,0 +1,53 @@
+.main {
+    margin-left: 150px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+.transition-transform{
+    transition: transform 1s;
+}
+
+.bg-red {
+    background-color: red;
+    transform-origin: top left;
+}
+
+.bg-yellow {
+    background-color: yellow;
+    transform-origin: top right;
+}
+
+.bg-blue {
+    background-color: blue;
+    transform-origin: bottom left;
+}
+
+.bg-green {
+    background-color: green;
+    transform-origin: bottom right;
+}
+
+.main:hover .minus-deg {
+    transform: rotate(-90deg);
+}
+
+.main:hover .plus-deg {
+    transform: rotate(90deg);
+}
+
+.label{
+    position: absolute;
+    z-index: 1;
+}
