@@ -6,9 +6,15 @@
 .left-menus{
     height: 100vh;
     width: 40px;
-    /* position: absolute; */
     background-color: #efefef;
     text-align: center;
+}
+.listOfIcons{
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 80vh;
 }
 .menu-icon{
     size: 50px;
@@ -101,7 +107,7 @@ tr,td{
     height: 100px;
     width: 100%;
     background-color: #006ea4;
-    position: absolute;
+    position: fixed;
     margin-bottom: 0px;
     bottom: 0px;
     box-sizing: border-box;

@@ -1,9 +1,15 @@
+body{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    vertical-align: middle;
+}
 .main {
-    margin-left: 150px;
-    height: 200px;
-    width: 200px;
     display: flex;
     flex-wrap: wrap;
+    height: 200px;
+    width: 200px;
     position: relative;
     align-items: center;
     justify-content: center;
