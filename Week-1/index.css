@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.left-menus{
+    height: 100vh;
+    width: 40px;
+    background-color: #efefef;
+    text-align: center;
+}
+.listOfIcons{
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 80vh;
+}
+.menu-icon{
+    size: 50px;
+    color: black;
+    font-weight: 500;
+}
+li{
+    padding: 30px 0 30px 0;
+}
+.content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.topBox{
+    height: 300px;
+    width: 100%;
+    background-color: #272727;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    gap: 50px;
+}
+.theam_Image_Box{
+    /* margin-left: 50px; */
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+}
+.theam_Image{
+    width: 200px;
+}
+.detailBox{
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.name_of_song{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.artist_name{
+    font-size: 10px;
+}
+.other_details{
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+}
+.modules{
+    justify-content: space-between;
+    height: 20px;
+    width: 185px;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+.table_content{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+.table-class{
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    border-style: none;
+}
+tr:nth-child(even) {
+    background-color: #c6d1d1;
+}
+
+tr,td{
+    border-style: hidden;
+    padding: 10px;
+}
+.tbl-td-border{
+    border: 1px solid black;
+    color: blue;
+}
+
+.footer_bar{
+    height: 100px;
+    width: 100%;
+    background-color: #006ea4;
+    position: fixed;
+    margin-bottom: 0px;
+    bottom: 0px;
+    box-sizing: border-box;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction:row;
+}
+.footbar_image{
+    height: 100%;
+}
+.current_song_name_box{
+    width:100%;
+    height: 100%;
+    padding:10px;
+}
+.current_song_name{
+    color: white;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+.current_song_modules{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}

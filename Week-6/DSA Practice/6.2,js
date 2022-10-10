@@ -1,0 +1,38 @@
+var spiralOrder = function(matrix) {
+
+    let arr = [];
+    let rowStart = 0, 
+    rowEnd = matrix.length - 1,
+    colStart = 0,      
+    colEnd = matrix[0].length - 1;
+    
+    while (colStart <= colEnd && rowStart <= rowEnd) {
+     
+     for (let i = colStart; i <= colEnd; i++) {
+        arr.push(matrix[rowStart][i]);
+     }
+     rowStart++;
+      
+     for (let i = rowStart; i <= rowEnd; i++) {
+         arr.push(matrix[i][colEnd]);
+     }
+     colEnd--;
+        
+      if (rowStart <= rowEnd) {
+        for (let i = colEnd; i >= colStart; i--) {
+           arr.push(matrix[rowEnd][i]);
+        }
+      }
+      rowEnd--;
+      
+      if (colStart <= colEnd) {
+        for (let i = rowEnd; i >= rowStart; i--) {
+           arr.push(matrix[i][colStart]);
+        }
+      }
+      colStart++;
+    }
+
+    return arr;
+    
+};
